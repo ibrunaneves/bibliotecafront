@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca da Brubs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Biblioteca da Brubs</h1>
+        <div class="menu">
+            <button onclick="showBooks()">Todos os livros</button>
+            <button onclick="openAddBookForm()">Adicionar um novo livro</button>
+            <button onclick="searchByAuthor()">Buscar livro pelo autor</button>
+            <button onclick="removeBook()">Remover livro pelo código</button>
+            <button onclick="showBookCount()">Quantidade de livros no sistema</button>
+            <button onclick="exitSystem()">Sair do sistema</button>
+        </div>
+
+        <div id="output"></div>
+        
+        <div id="addBookForm" style="display: none;">
+            <h3>Adicionar um Novo Livro</h3>
+            <input type="text" id="bookTitle" placeholder="Digite o título do livro" required><br><br>
+            <input type="text" id="bookAuthor" placeholder="Digite o autor do livro" required><br><br>
+            <button onclick="addBook()">Adicionar Livro</button>
+            <button onclick="closeAddBookForm()">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

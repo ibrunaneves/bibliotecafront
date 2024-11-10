@@ -1,0 +1,77 @@
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Vidaloka&display=swap');
+
+/* Definições gerais do corpo da página */
+body {
+  font-family: 'Oswald', sans-serif;
+  background-image: url('https://img.freepik.com/vetores-gratis/fundo-branco-abstrato_23-2148810112.jpg?t=st=1731264141~exp=1731267741~hmac=c29b4aca7bde2e4f969e554b01e7585d7e2f87b118e9bd310f6c26b807c65745&w=1800'); 
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Contêiner principal */
+.container {
+  background-color: #b0b6d76d;
+  border-radius: 50px 5px 50px;
+  padding: 30px;
+  box-shadow:  10px 10px 10px #9398b3;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  font-family: 'Vidaloka', serif;
+}
+
+
+/* Estilo do título */
+h1 {
+  font-family: 'Vidaloka', serif;
+  font-size: 55px;
+  color: #807ac1;
+  margin-bottom: 20px;
+}
+
+/* Estilo para o menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Estilo dos botões */
+button {
+  font-family: 'Vidaloka', sans-serif;
+  font-size: 20px;
+  background-color: #a7bbdd97;
+  color: #6f89ae;
+  border: none;
+  padding: 10px;
+  border-radius: 10px 20px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover para os botões */
+button:hover {
+  background-color: #8ba4ceb9;
+  color: white;
+}
+
+/* Estilo para a área onde os livros serão exibidos */
+#livrosContainer {
+  margin-top: 20px;
+  color: #6f89ae;
+}
+
+/* Estilo para a quantidade de livros */
+#quantidadeContainer {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #f0e5d8;
+}
